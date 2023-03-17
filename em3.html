@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee 3</title>
+    <!--Chart.js JS CDN--> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script> 
+  </head>
+    <center><h1><strong>EMPLOYEES MANAGEMENT SYSTEM</strong></h1></center>
+  <center><h2><strong>Employee 3</strong></h2></center>
+    <a href="a.html">  Back  </a>
+  <body>
+
+    <div>
+	<canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+       var ctx = document.getElementById('myChart').getContext('2d');
+      var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            datasets: [{ 
+                data: [90,112,101,148,100,113,120],
+                label: "Total Product",
+                borderColor: "#D5AA0F",
+                backgroundColor: "#7bb6dd",
+                fill: false,
+              }, { 
+                data: [50,52,61,93,60,63,70],
+                label: "Accepted Product",
+                borderColor: "#840778 ",
+                backgroundColor: "#71d1bd",
+                fill: false,
+              }, { 
+                data: [30,40,30,45,49,40,39],
+                label: "Pending Product",
+                borderColor: "#B404AE",
+                backgroundColor:"#ffc04d",
+                fill: false,
+              }, { 
+                data: [10,20,10,10,1,10,11],
+                label: "Rejected Product",
+                borderColor: "#A01326",
+                backgroundColor:"#d78f89",
+                fill: false,
+              }
+            ]
+          },
+        });
+    </script>
+
+  
+
+  </body>
+  <center>
+  
+</html>
